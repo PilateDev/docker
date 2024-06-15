@@ -127,7 +127,7 @@ RUN \
         --no-cache-dir \
         --compile-bytecode \
         -r /app/src/requirements.txt \
-        "Weblate[$WEBLATE_EXTRAS]==$WEBLATE_VERSION" \
+        "https://github.com/PilateDev/pilate/archive/refs/heads/stable.zip#egg=Weblate[$WEBLATE_EXTRAS]" \
       ;; \
   esac \
   && python -c 'from phply.phpparse import make_parser; make_parser()' \
